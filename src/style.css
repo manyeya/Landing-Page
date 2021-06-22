@@ -1,0 +1,91 @@
+.grid {
+	pointer-events: none;
+	position: absolute;
+	width: 110%;
+	height: 110%;
+	top: -5%;
+	left: -5%;
+	display: grid;
+	grid-template-columns: repeat(50,2%);
+	grid-template-rows: repeat(50,2%);
+}
+
+.grid_item {
+	position: relative;
+
+}
+
+.grid_img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.pos-1 {
+	grid-area: 10 / 1 / 26 / 7;
+	width: 400px;
+	height: 400px;
+  border-radius: 50%;
+  filter: blur(70px);
+  background: linear-gradient(rgba(146,114,236,1), rgba(22,83,242,1));
+}
+
+.pos-2 {
+	grid-area: 1 / 18 / 9 / 27;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+.pos-3 {
+	width: 400px;
+	height: 400px;
+	grid-area: 20 / 40 / 90 / 50;
+	border-radius: 100%;
+	filter: blur(60px);
+  background: linear-gradient(134deg, rgba(236.94, 114.52, 114.52, 1), rgba(242.25, 22.21, 75.02, 1) 51%, rgba(210.37, 47.33, 125.59, 1)); ;
+}
+
+.glass{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background: rgba( 219, 238, 249, 0.65 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 7.0px );
+	-webkit-backdrop-filter: blur( 7.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+body{
+	background:white;
+}
+
+.amazing-wrapper-1{
+	overflow: hidden;
+	flex:0 0 400px;
+}
+
+
+.amazing-head{
+	font-size: 133px; letter-spacing: 3.99px; line-height: 140px; color: rgba(23.52, 24.44, 23.83, 1); text-transform: uppercase;
+}
+
+.get_started{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 2000px;
+	height: 2000px;
+	border-radius: 50%;
+	background-color: chocolate;
+}
