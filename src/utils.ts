@@ -1,8 +1,10 @@
 interface utils {
-    getMousePos:(e:any | Event) => object
+    getMousePos:(e:any | Event) => object,
+    
 }
 
 export const utilFunctions: utils = {
+
     getMousePos:(e:any) => {
         let posx = 0;
         let posy = 0;
@@ -18,4 +20,5 @@ export const utilFunctions: utils = {
         
         return { x : posx, y : posy }
     }
+
 }

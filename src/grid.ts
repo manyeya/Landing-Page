@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+
+
 const getMousePos = (e: any) => {
     let posx = 0;
     let posy = 0;
